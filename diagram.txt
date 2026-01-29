@@ -1,0 +1,46 @@
+┌───────────────────────────────┐
+│           INTERFACE           │
+│       (Streamlit / Web)       │
+│                               │
+│  • Simulação                  │
+│  • Painel técnico             │
+│  • Visualizações              │
+│  • Relatórios                 │
+└───────────────▲───────────────┘
+                │
+                │ chamadas
+                ▼
+┌───────────────────────────────┐
+│        CAMADA DE SERVIÇOS      │
+│        (API interna)           │
+│                               │
+│  • soil_service                │
+│  • shallow_service             │
+│  • deep_service                │
+│  • report_service              │
+└───────────────▲───────────────┘
+                │
+                │ lógica técnica
+                ▼
+┌───────────────────────────────┐
+│        CORE GEOTÉCNICO         │
+│   (engenharia pura)            │
+│                               │
+│  • Tensões / Mohr              │
+│  • Sapatas / Estacas           │
+│  • Recalques                   │
+│  • Estabilidade / FEM          │
+└───────────────▲───────────────┘
+                │
+                │ validações
+                ▼
+┌───────────────────────────────┐
+│       NORMAS & VERIFICAÇÕES    │
+│     (NBR 6122 / 6118)          │
+└───────────────────────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│     EXPORTAÇÃO & RELATÓRIOS    │
+│  CSV • Excel • PDF • HTML     │
+└───────────────────────────────┘
