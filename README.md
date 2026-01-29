@@ -40,7 +40,7 @@ Essa abordagem garante:
 simula_solo/
 │
 ├── core/              # Núcleo geotécnico (engenharia pura)
-├── services/          # API interna / orquestração
+├── service/           # API interna / orquestração
 ├── norms/             # Verificações normativas (NBR)
 ├── visualization/     # Gráficos e visualizações
 ├── exports/           # Exportação de resultados

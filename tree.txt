@@ -31,7 +31,7 @@ simula_solo/
 │   ├── nbr_6118.py
 │   └── checks.py
 │
-├── services/                     # 🔌 API INTERNA
+├── service/                      # 🔌 API INTERNA
 │   ├── soil_service.py
 │   ├── shallow_service.py
 │   ├── deep_service.py
