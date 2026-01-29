@@ -1,23 +1,21 @@
 # app/pages/1_solo_e_tensoes.py
 
 import streamlit as st
-from services.soil_service import analyze_stress
-from visualization.mohr_plot import plot_mohr
+from app.ui_utils import UI
+from core.stress_state import StressState
+from visualization.stress_path import StressPathPlot
 
-st.title("Análise de Tensões no Solo")
 
-sigma_x = st.number_input("σx (kPa)")
-sigma_y = st.number_input("σy (kPa)")
-tau_xy = st.number_input("τxy (kPa)")
+st.title("Análise de Solo e Tensões")
+UI.section("Entradas")
 
-if st.button("Analisar"):
-    result = analyze_stress({
-        "sigma_x": sigma_x,
-        "sigma_y": sigma_y,
-        "tau_xy": tau_xy
-    })
 
-    st.metric("σ₁", f"{result['sigma_1']:.2f} kPa")
-    st.metric("σ₃", f"{result['sigma_3']:.2f} kPa")
+sig1 = st.text_input("σ1 (lista, MPa)", "100,120,140")
+sig3 = st.text_input("σ3 (lista, MPa)", "50,60,70")
 
-    plot_mohr(sigma_x, sigma_y, tau_xy)
+
+if st.button("Gerar Stress Path"):
+s1 = [float(x) for x in sig1.split(',')]
+s3 = [float(x) for x in sig3.split(',')]
+StressPathPlot.plot(s1, s3)
+
