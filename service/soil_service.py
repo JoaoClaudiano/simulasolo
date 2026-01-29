@@ -1,4 +1,4 @@
-# services/soil_service.py
+# service/soil_service.py
 
 from core.soil.stress_state import principal_stresses
 
