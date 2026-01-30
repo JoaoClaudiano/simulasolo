@@ -15,7 +15,7 @@ project = st.text_input("Nome do Projeto", "SimulaSolo – Estudo de Fundação"
 
 
 if st.button("Gerar Relatório"):
-rb = ReportBuilder(project)
+    rb = ReportBuilder(project)
 
 
 rb.add_section("Metodologia", "Análises geotécnicas realizadas conforme métodos consagrados e NBR 6122.")
