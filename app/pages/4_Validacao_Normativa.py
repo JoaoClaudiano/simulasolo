@@ -29,9 +29,7 @@ if st.button("Validar Projeto"):
     "Dimensão": NBR6122Validator.dimensions(B)
     }
 
-
-report = NormativeReport.summary(results)
-
-
-st.subheader(report["conclusao"])
-st.json(report["detalhes"])
+    report = NormativeReport.summary(results)
+    
+    st.subheader(report["conclusao"])
+    st.json(report["detalhes"])
