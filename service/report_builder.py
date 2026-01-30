@@ -2,36 +2,27 @@
 # service/report_builder.py
 # =====================================================
 
-
-from datetime import datetime
-
-
-class ReportBuilder:
 """
 Constrói relatório técnico estruturado
 independente do formato final (PDF/HTML)
 """
+from datetime import datetime
 
 
-    def __init__(self, project_name: str):
+class ReportBuilder:
+
+    def __init__(self, project_name):
         self.project_name = project_name
         self.sections = []
-        self.metadata = {
-        "projeto": project_name,
-        "data": datetime.now().strftime("%d/%m/%Y"),
-        "responsavel": "Eng. Civil"
-        }
-    
-    
-    def add_section(self, title: str, content: str):
+
+    def add_section(self, title, content):
         self.sections.append({
-        "title": title,
-        "content": content
+            "title": title,
+            "content": content
         })
-    
 
     def build(self):
         return {
-        "metadata": self.metadata,
-        "sections": self.sections
+            "project": self.project_name,
+            "sections": self.sections
         }
