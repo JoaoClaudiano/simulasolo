@@ -17,8 +17,8 @@ gamma = UI.number("Peso específico γ (kN/m³)", 18)
 
 
 if st.button("Comparar Métodos"):
-results = {
-"Terzaghi": Terzaghi.compute_curve(c, phi, gamma),
-"Meyerhof": Meyerhof.compute_curve(c, phi, gamma)
-}
+    results = {
+    "Terzaghi": Terzaghi.compute_curve(c, phi, gamma),
+    "Meyerhof": Meyerhof.compute_curve(c, phi, gamma)
+    }
 BearingCapacityPlot.compare(results)
