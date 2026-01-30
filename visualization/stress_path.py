@@ -3,14 +3,16 @@
 # =====================================================
 
 
+import matplotlib.pyplot as plt
+import streamlit as st
+
 class StressPathPlot:
-@staticmethod
-def plot(sig1, sig3):
-plt.figure()
-p = [(s1 + s3) / 2 for s1, s3 in zip(sig1, sig3)]
-q = [(s1 - s3) / 2 for s1, s3 in zip(sig1, sig3)]
-plt.plot(p, q)
-plt.xlabel("p (tensão média)")
-plt.ylabel("q (tensão desviadora)")
-plt.title("Stress Path")
-BasePlot.show()
+
+    @staticmethod
+    def plot(sig1, sig3):
+        fig, ax = plt.subplots()
+        ax.plot(sig3, sig1, marker="o")
+        ax.set_xlabel("σ3")
+        ax.set_ylabel("σ1")
+        ax.set_title("Stress Path")
+        st.pyplot(fig)
