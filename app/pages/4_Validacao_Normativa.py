@@ -23,11 +23,11 @@ B = st.number_input("Largura da fundação (m)", 0.8)
 
 
 if st.button("Validar Projeto"):
-results = {
-"Capacidade": NBR6122Validator.bearing_capacity(q_adm, q_solic),
-"Recalque": NBR6122Validator.settlement(sett, sett_lim),
-"Dimensão": NBR6122Validator.dimensions(B)
-}
+    results = {
+    "Capacidade": NBR6122Validator.bearing_capacity(q_adm, q_solic),
+    "Recalque": NBR6122Validator.settlement(sett, sett_lim),
+    "Dimensão": NBR6122Validator.dimensions(B)
+    }
 
 
 report = NormativeReport.summary(results)
