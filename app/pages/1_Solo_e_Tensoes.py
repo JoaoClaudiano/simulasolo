@@ -15,7 +15,7 @@ sig3 = st.text_input("σ3 (lista, MPa)", "50,60,70")
 
 
 if st.button("Gerar Stress Path"):
-s1 = [float(x) for x in sig1.split(',')]
-s3 = [float(x) for x in sig3.split(',')]
-StressPathPlot.plot(s1, s3)
+    s1 = [float(x) for x in sig1.split(',')]
+    s3 = [float(x) for x in sig3.split(',')]
+    StressPathPlot.plot(s1, s3)
 
