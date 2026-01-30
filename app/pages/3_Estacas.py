@@ -15,5 +15,5 @@ Nspt = UI.number("NSPT médio", 10)
 
 
 if st.button("Carga × Recalque"):
-load, settlement = AokiVelloso.load_settlement_curve(Nspt)
-LoadSettlementPlot.plot(load, settlement)
+    load, settlement = AokiVelloso.load_settlement_curve(Nspt)
+    LoadSettlementPlot.plot(load, settlement)
