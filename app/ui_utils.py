@@ -17,4 +17,3 @@ class UI:
     @staticmethod
     def text(label: str, default=""):
         return st.text_input(label, value=default)
-
