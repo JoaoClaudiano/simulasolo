@@ -3,7 +3,7 @@
 # =====================================================
 
 import streamlit as st
-from app.ui_utils import UI
+from ui_utils import UI
 from core.bearing_capacity import Terzaghi, Meyerhof
 from visualization.bearing_capacity import BearingCapacityPlot
 
