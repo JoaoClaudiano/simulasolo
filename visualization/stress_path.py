@@ -4,7 +4,6 @@
 
 
 import matplotlib.pyplot as plt
-import streamlit as st
 
 class StressPathPlot:
 
@@ -12,7 +11,8 @@ class StressPathPlot:
     def plot(sig1, sig3):
         fig, ax = plt.subplots()
         ax.plot(sig3, sig1, marker="o")
-        ax.set_xlabel("σ3")
-        ax.set_ylabel("σ1")
+        ax.set_xlabel("σ3 (MPa)")
+        ax.set_ylabel("σ1 (MPa)")
         ax.set_title("Stress Path")
-        st.pyplot(fig)
+        ax.grid(True)
+        plt.show()
