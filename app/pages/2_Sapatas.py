@@ -21,4 +21,4 @@ if st.button("Comparar Métodos"):
     "Terzaghi": Terzaghi.compute_curve(c, phi, gamma),
     "Meyerhof": Meyerhof.compute_curve(c, phi, gamma)
     }
-BearingCapacityPlot.compare(results)
+    BearingCapacityPlot.compare(results)
