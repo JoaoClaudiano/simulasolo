@@ -3,7 +3,7 @@
 # =====================================================
 
 import streamlit as st
-from app.ui_utils import UI
+from ui_utils import UI
 from core.piles import AokiVelloso
 from visualization.load_settlement import LoadSettlementPlot
 
