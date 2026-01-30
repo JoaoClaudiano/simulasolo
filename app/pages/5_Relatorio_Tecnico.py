@@ -22,6 +22,6 @@ if st.button("Gerar Relatório"):
     rb.add_section("Conclusão", "O projeto atende aos critérios normativos vigentes.")
         
         
-report = rb.build()
-html = HTMLReportRenderer.render(report)
-st.components.v1.html(html, height=600)
+    report = rb.build()
+    html = HTMLReportRenderer.render(report)
+    st.components.v1.html(html, height=600)
