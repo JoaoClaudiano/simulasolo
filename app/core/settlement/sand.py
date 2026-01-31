@@ -4,6 +4,6 @@
 
 
 class SandSettlement:
-@staticmethod
-def elastic(q, B, Es):
-return q * B / Es
+    @staticmethod
+    def elastic(q, B, Es):
+        return q * B / Es

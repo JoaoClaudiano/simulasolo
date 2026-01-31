@@ -10,5 +10,5 @@ class Coulomb:
         numerator = math.sin(phi + delta) * math.sin(phi - beta)
         denominator = math.cos(delta + beta) * math.cos(beta)
         return (numerator / denominator) / (
-            math.cos(beta) * (1 + math.sqrt(numerator / denominator))**2
+        math.cos(beta) * (1 + math.sqrt(numerator / denominator))**2
         )

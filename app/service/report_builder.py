@@ -17,12 +17,12 @@ class ReportBuilder:
 
     def add_section(self, title, content):
         self.sections.append({
-            "title": title,
-            "content": content
+        "title": title,
+        "content": content
         })
 
     def build(self):
         return {
-            "project": self.project_name,
-            "sections": self.sections
+        "project": self.project_name,
+        "sections": self.sections
         }

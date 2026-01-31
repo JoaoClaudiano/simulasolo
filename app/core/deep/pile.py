@@ -5,5 +5,5 @@
 
 @dataclass
 class Pile:
-diameter: float
-length: float
+    diameter: float
+    length: float
