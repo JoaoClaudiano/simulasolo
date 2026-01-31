@@ -21,16 +21,16 @@ class Bishop:
                 alpha = math.radians(s.alpha)
 
                 num += (
-                    s.cohesion * s.width +
-                    (s.weight * math.cos(alpha)) * math.tan(phi)
+                s.cohesion * s.width +
+                (s.weight * math.cos(alpha)) * math.tan(phi)
                 )
                 den += s.weight * math.sin(alpha)
 
-            FS_new = num / den if den != 0 else float("inf")
+                FS_new = num / den if den != 0 else float("inf")
 
-            if abs(FS_new - FS) < tol:
-                return FS_new
+                if abs(FS_new - FS) < tol:
+                    return FS_new
 
-            FS = FS_new
+                    FS = FS_new
 
-        return FS
+                    return FS

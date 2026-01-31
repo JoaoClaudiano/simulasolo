@@ -8,15 +8,15 @@ from app.core.reliability.probability import Probability
 
 
 class ReliabilityService:
-@staticmethod
-def monte_carlo_check(function, variables, limit, n=10000):
-results = MonteCarlo.simulate(function, variables, n)
-pf = Probability.failure_probability(results, limit)
-beta = Probability.reliability_index(pf)
+    @staticmethod
+    def monte_carlo_check(function, variables, limit, n=10000):
+        results = MonteCarlo.simulate(function, variables, n)
+        pf = Probability.failure_probability(results, limit)
+        beta = Probability.reliability_index(pf)
 
 
-return {
-"status": "ok",
-"pf": pf,
-"beta": beta
-}
+        return {
+        "status": "ok",
+        "pf": pf,
+        "beta": beta
+        }

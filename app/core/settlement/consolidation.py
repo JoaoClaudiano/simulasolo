@@ -12,7 +12,7 @@ class ConsolidationSettlement:
     @staticmethod
     def primary(q, soil: ConsolidationSoil):
         return (
-            (soil.Cc / (1 + soil.e0)) *
-            soil.H *
-            math.log10((soil.sigma_0 + q) / soil.sigma_0)
+        (soil.Cc / (1 + soil.e0)) *
+        soil.H *
+        math.log10((soil.sigma_0 + q) / soil.sigma_0)
         )

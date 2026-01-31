@@ -4,6 +4,6 @@
 
 
 class BlockFailure:
-@staticmethod
-def capacity(cu, gamma, B, L, D):
-return cu * B * L + gamma * D * B * L
+    @staticmethod
+    def capacity(cu, gamma, B, L, D):
+        return cu * B * L + gamma * D * B * L
