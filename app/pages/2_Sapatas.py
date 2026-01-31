@@ -3,9 +3,9 @@
 # =====================================================
 
 import streamlit as st
-from ui_utils import UI
-from core.bearing_capacity import Terzaghi, Meyerhof
-from visualization.bearing_capacity import BearingCapacityPlot
+from app.ui_utils import UI
+from app.core.bearing_capacity import Terzaghi, Meyerhof
+from app.visualization.bearing_capacity import BearingCapacityPlot
 
 st.title("Fundações Superficiais – Sapatas")
 UI.section("Parâmetros do Solo")

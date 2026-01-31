@@ -3,9 +3,9 @@
 # =====================================================
 
 import streamlit as st
-from ui_utils import UI
-from core.piles import AokiVelloso
-from visualization.load_settlement import LoadSettlementPlot
+from app.ui_utils import UI
+from app.core.piles import AokiVelloso
+from app.visualization.load_settlement import LoadSettlementPlot
 
 st.title("Fundações Profundas – Estacas")
 UI.section("Dados SPT")

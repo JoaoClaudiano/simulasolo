@@ -3,8 +3,8 @@
 # =====================================================
 
 import streamlit as st
-from service.report_builder import ReportBuilder
-from service.report_render_html import HTMLReportRenderer
+from app.service.report_builder import ReportBuilder
+from app.service.report_render_html import HTMLReportRenderer
 
 st.title("Relatório Técnico Automático")
 

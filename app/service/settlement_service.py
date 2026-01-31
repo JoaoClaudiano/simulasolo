@@ -3,11 +3,11 @@
 # =====================================================
 
 
-from core.settlement.elastic import ElasticSettlement
-from core.settlement.consolidation import ConsolidationSettlement
-from core.settlement.secondary import SecondarySettlement
-from core.limit_states.els import ELS
-from core.validation.nbr6122 import NBR6122
+from app.core.settlement.elastic import ElasticSettlement
+from app.core.settlement.consolidation import ConsolidationSettlement
+from app.core.settlement.secondary import SecondarySettlement
+from app.core.limit_states.els import ELS
+from app.core.validation.nbr6122 import NBR6122
 
 
 class SettlementService:

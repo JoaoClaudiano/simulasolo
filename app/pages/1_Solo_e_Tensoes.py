@@ -3,8 +3,8 @@
 # =====================================================
 
 import streamlit as st
-from ui_utils import UI
-from visualization.stress_path import StressPathPlot
+from app.ui_utils import UI
+from app.visualization.stress_path import StressPathPlot
 
 st.title("Análise de Solo e Tensões")
 UI.section("Entradas")

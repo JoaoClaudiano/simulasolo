@@ -3,8 +3,8 @@
 # =====================================================
 
 
-from core.reliability.monte_carlo import MonteCarlo
-from core.reliability.probability import Probability
+from app.core.reliability.monte_carlo import MonteCarlo
+from app.core.reliability.probability import Probability
 
 
 class ReliabilityService:
