@@ -3,9 +3,9 @@
 # =====================================================
 
 
-from core.deep.aoki_velloso import AokiVelloso
-from core.deep.decourt_quaresma import DecourtQuaresma
-from core.deep.group import PileGroup
+from app.core.deep.aoki_velloso import AokiVelloso
+from app.core.deep.decourt_quaresma import DecourtQuaresma
+from app.core.deep.group import PileGroup
 
 
 class PileService:

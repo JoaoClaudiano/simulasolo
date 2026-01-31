@@ -1,6 +1,6 @@
 # service/soil_service.py
 
-from core.soil.stress_state import principal_stresses
+from app.core.soil.stress_state import principal_stresses
 
 def analyze_stress(data):
     sigma_1, sigma_3 = principal_stresses(

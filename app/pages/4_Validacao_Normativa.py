@@ -3,8 +3,8 @@
 # =====================================================
 
 import streamlit as st
-from service.norm_validation import NBR6122Validator
-from service.nbr_report import NormativeReport
+from app.service.norm_validation import NBR6122Validator
+from app.service.nbr_report import NormativeReport
 
 st.title("Validação Normativa – NBR 6122")
 

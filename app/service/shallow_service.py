@@ -3,11 +3,11 @@
 # =====================================================
 
 
-from core.shallow.terzaghi import Terzaghi
-from core.shallow.meyerhof import Meyerhof
-from core.shallow.hansen import Hansen
-from core.shallow.vesic import Vesic
-from core.limit_states.elu import ELU, ELUFactors
+from app.core.shallow.terzaghi import Terzaghi
+from app.core.shallow.meyerhof import Meyerhof
+from app.core.shallow.hansen import Hansen
+from app.core.shallow.vesic import Vesic
+from app.core.limit_states.elu import ELU, ELUFactors
 
 
 class ShallowFoundationService:
